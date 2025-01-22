@@ -15,6 +15,9 @@
     # IDEs
     jetbrains.idea-community-bin
 
+    # Dev
+    neovim
+
     # Utils
     bat
     yt-dlp
