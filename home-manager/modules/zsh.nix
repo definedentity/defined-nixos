@@ -19,6 +19,9 @@
         zinit light zsh-users/zsh-autosuggestions
         zinit light Aloxaf/fzf-tab
         zinit light MichaelAquilina/zsh-you-should-use
+
+        zinit snippet OMZP::git
+        zinit snippet OMZP::sudo
       '';
 
       initExtra = ''
