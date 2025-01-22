@@ -2,7 +2,6 @@
 
 {
   imports = [
-    # Include the results of the hardware scan.
     ./hardware/hardware-configuration.nix
     ./hardware/nvidia.nix
     ./gui/kde.nix
@@ -10,6 +9,7 @@
     ./shell.nix
     ./nixos/flake.nix
     ./nixos/gc.nix
+    ./sddm/sddm.nix
   ];
 
   networking.hostName = "definedos"; # Define your hostname.
@@ -67,15 +67,7 @@
       "networkmanager"
       "wheel"
     ];
-    packages = with pkgs; [ ];
   };
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [ ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

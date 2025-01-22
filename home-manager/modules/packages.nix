@@ -17,7 +17,6 @@
 
     # Dev
     neovim
-    bun
 
     # Utils
     bat

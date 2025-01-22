@@ -5,5 +5,6 @@
 		./wezterm.nix
 		./catppuccin.nix
 		./zsh.nix
+		./development/bundle.nix
 	];
 }
