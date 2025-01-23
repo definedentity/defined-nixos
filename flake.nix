@@ -66,7 +66,7 @@
 
               home-manager.users.defined = {
                 imports = [
-                  ./home/defined
+                  ./home/defined/definedos.nix
                 ];
               };
             }
