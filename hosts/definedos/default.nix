@@ -14,6 +14,7 @@
     ../common/optional/gpg.nix
     ../common/optional/flatpak.nix
     ../common/optional/fail2ban.nix
+    ../common/optional/quietboot.nix
   ];
 
   networking.hostName = "definedos";
