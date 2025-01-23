@@ -2,7 +2,6 @@
   imports = [
     ./features/desktop/common
     ./features/desktop/games
-    ./features/desktop/wireless
 
     ./features/dev
     ./features/cli

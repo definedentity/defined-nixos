@@ -1,11 +1,12 @@
 { pkgs, ... }:
 {
   imports = [
-    ./zsh.nix
+    ./zsh
     ./git.nix
     ./fzf.nix
     ./gpg.nix
-    ./fastfetch.nix
+    ./fastfetch
+    ./nh.nix
   ];
 
   home.packages = with pkgs; [
@@ -16,7 +17,6 @@
     aria2 # Better curl
     yt-dlp # YouTube dlp
 
-    nh # Nix helper
     nixfmt-rfc-style # Nix formatter
   ];
 }

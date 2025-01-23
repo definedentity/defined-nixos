@@ -8,7 +8,6 @@
     ./services
     ./network
 
-    ./nh.nix
     ./locale.nix
   ];
 }
