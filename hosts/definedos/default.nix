@@ -13,6 +13,7 @@
     ../common/optional/pipewire.nix
     ../common/optional/gpg.nix
     ../common/optional/flatpak.nix
+    ../common/optional/fail2ban.nix
   ];
 
   networking.hostName = "definedos";
