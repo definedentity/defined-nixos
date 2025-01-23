@@ -18,5 +18,6 @@
     yt-dlp # YouTube dlp
 
     nixfmt-rfc-style # Nix formatter
+    nix-init
   ];
 }
