@@ -50,9 +50,12 @@
     ];
   };
 
-  swapDevices = [ ];
-
-  networking.useDHCP = lib.mkDefault true;
+  swapDevices = [
+    {
+      device = "/swapfile";
+      size = 1024 * 24;
+    }
+  ];
 
   nixpkgs.hostPlatform = "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = true;

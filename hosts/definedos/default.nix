@@ -8,7 +8,7 @@
 
     ../common/optional/nvidia.nix
     ../common/optional/kde.nix
-    ../common/optional/wireless.nix
+    ../common/optional/bluetooth.nix
     ../common/optional/gc.nix
     ../common/optional/pipewire.nix
     ../common/optional/gpg.nix
