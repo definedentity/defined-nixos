@@ -16,6 +16,8 @@
     bat # Better cat
     aria2 # Better curl
     yt-dlp # YouTube dlp
+    dust # Better du
+    pfetch-rs # System fetch
 
     nixfmt-rfc-style # Nix formatter
     nix-init
