@@ -2,16 +2,18 @@
   description = "defined's NixOS configuration";
 
   inputs = {
+    # Nix ecosystem
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # Home Manager
     home-manager = {
       url = "github:nix-community/home-manager/release-24.11";
 
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    # WezTerm
     wezterm.url = "github:wez/wezterm?dir=nix";
   };
 
@@ -41,8 +43,7 @@
           };
 
           modules = [
-            ./nixos/configuration.nix
-            ./modules/bundle.nix
+            ./hosts/definedos
 
             home-manager.nixosModules.home-manager
             {
@@ -65,7 +66,7 @@
 
               home-manager.users.defined = {
                 imports = [
-                  ./home-manager/home.nix
+                  ./home/defined
                 ];
               };
             }
