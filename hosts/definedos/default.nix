@@ -1,21 +1,29 @@
 { pkgs, ... }:
 {
   imports = [
-    ../common
     ./hardware-configuration.nix
+
+    ../common/users/defined
+    ../common/global
+
+    ../common/optional/nvidia.nix
+    ../common/optional/kde.nix
+    ../common/optional/wireless.nix
+    ../common/optional/gc.nix
+    ../common/optional/pipewire.nix
+    ../common/optional/gpg.nix
+    ../common/optional/flatpak.nix
+  ];
+
+  networking.hostName = "definedos";
+
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
   ];
 
   programs.zsh.enable = true;
   users.users.defined.shell = pkgs.zsh;
-
-  users.users.defined = {
-    isNormalUser = true;
-    description = "Nguyen Minh Tho";
-    extraGroups = [
-      "networkmanager"
-      "wheel"
-    ];
-  };
 
   system.stateVersion = "24.11";
 }
