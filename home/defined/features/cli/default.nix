@@ -7,6 +7,7 @@
     ./gpg.nix
     ./fastfetch
     ./nh.nix
+    ./direnv.nix
   ];
 
   home.packages = with pkgs; [
