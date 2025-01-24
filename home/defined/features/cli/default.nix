@@ -20,6 +20,7 @@
     pfetch-rs # System fetch
 
     nixfmt-rfc-style # Nix formatter
+    nixd # Nix LSP
     nix-init
   ];
 }
