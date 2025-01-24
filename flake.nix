@@ -15,6 +15,9 @@
 
     # WezTerm
     wezterm.url = "github:wez/wezterm?dir=nix";
+
+    # Stylix
+    stylix.url = "github:danth/stylix/release-24.11";
   };
 
   outputs =
@@ -43,6 +46,8 @@
           };
 
           modules = [
+            inputs.stylix.nixosModules.stylix
+
             ./hosts/definedos
 
             home-manager.nixosModules.home-manager

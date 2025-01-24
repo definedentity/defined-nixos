@@ -3,6 +3,8 @@
   imports = [
     ./hardware-configuration.nix
 
+    ./stylix
+
     ../common/users/defined
     ../common/global
 
