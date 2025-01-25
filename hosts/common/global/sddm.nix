@@ -6,7 +6,7 @@
     pkgs.kdePackages.qtvirtualkeyboard
 
     (unstable-pkgs.sddm-astronaut.override {
-      embeddedTheme = "pixel_sakura";
+      embeddedTheme = "astronaut";
     })
   ];
 
