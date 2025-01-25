@@ -85,7 +85,7 @@ config.webgpu_preferred_adapter = {
     driver = "NVIDIA",
     driver_info = "565.77",
     name = "NVIDIA GeForce GTX 1650",
-    vendor = 4138
+    vendor = 4318
 }
 config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
