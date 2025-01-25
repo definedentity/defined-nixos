@@ -19,6 +19,10 @@
     yt-dlp # YouTube dlp
     dust # Better du
     pfetch-rs # System fetch
+    cava # Audio visualizer
+
+    # Entertainment
+    spotify-player
 
     nixfmt-rfc-style # Nix formatter
     nixd # Nix LSP
