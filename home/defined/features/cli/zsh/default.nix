@@ -41,6 +41,7 @@
         yt-flac = "yt-dlp -f bestaudio --extract-audio --audio-format flac";
         c = "clear";
         code = "code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland";
+        spotify = "spotify-player";
       };
     };
 
