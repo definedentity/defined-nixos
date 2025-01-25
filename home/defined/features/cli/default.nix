@@ -18,7 +18,7 @@
     aria2 # Better curl
     yt-dlp # YouTube dlp
     dust # Better du
-    pfetch-rs # System fetch
+    nitch # System fetch
     cava # Audio visualizer
 
     # Entertainment
