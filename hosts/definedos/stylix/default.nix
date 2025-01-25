@@ -12,6 +12,15 @@
     # Wallpaper
     image = ./background.png;
 
+    polarity = "dark";
+
+    targets.plymouth = {
+      enable = true;
+
+      logo = ./avatar.png;
+      logoAnimated = false;
+    };
+
     # Cursor
     cursor = {
       name = "Rose Pine Cursor";
