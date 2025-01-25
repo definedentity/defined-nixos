@@ -20,6 +20,7 @@
     dust # Better du
     nitch # System fetch
     cava # Audio visualizer
+    just # Command runner
 
     # Entertainment
     spotify-player
