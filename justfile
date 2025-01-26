@@ -10,4 +10,4 @@ rebuild: rebuild-pre
 update:
     nix flake update
 
-rebuild-update: rebuild update
+rebuild-update: update rebuild
