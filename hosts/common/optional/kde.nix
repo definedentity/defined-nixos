@@ -9,6 +9,5 @@
     elisa
     kate
     okular
-    spectacle
   ];
 }
