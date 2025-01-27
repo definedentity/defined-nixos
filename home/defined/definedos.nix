@@ -4,7 +4,6 @@
 
     ./features/desktop/common
     ./features/desktop/games
-    ./features/dev
   ];
 
   home = {
