@@ -10,7 +10,6 @@
 
     ../common/optional/nvidia.nix
     ../common/optional/kde.nix
-    ../common/optional/gc.nix
     ../common/optional/pipewire.nix
     ../common/optional/gpg.nix
     ../common/optional/flatpak.nix

@@ -1,4 +1,5 @@
-{...}: {
+{ ... }:
+{
   # Automatic updating
   system.autoUpgrade = {
     enable = true;
@@ -9,7 +10,7 @@
   nix.gc = {
     automatic = true;
     dates = "daily";
-    options = "--delete-older-than 7d";
+    options = "--delete-older-than +3";
   };
 
   # Optimize Nix store
