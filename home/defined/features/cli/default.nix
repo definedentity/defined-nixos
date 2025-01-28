@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, unstable-pkgs, ... }:
 {
   imports = [
     ./zsh
@@ -11,23 +11,28 @@
     ./direnv.nix
   ];
 
-  home.packages = with pkgs; [
-    bottom # System viewer
-    eza # Better ls
-    ripgrep # Better grep
-    bat # Better cat
-    aria2 # Better curl
-    yt-dlp # YouTube dlp
-    dust # Better du
-    nitch # System fetch
-    cava # Audio visualizer
-    just # Command runner
+  home.packages =
+    with pkgs;
+    [
+      bottom # System viewer
+      eza # Better ls
+      ripgrep # Better grep
+      bat # Better cat
+      aria2 # Better curl
+      yt-dlp # YouTube dlp
+      dust # Better du
+      nitch # System fetch
+      cava # Audio visualizer
+      just # Command runner
 
-    # Entertainment
-    spotify-player
+      # Entertainment
+      spotify-player
 
-    nixfmt-rfc-style # Nix formatter
-    nixd # Nix LSP
-    nix-init
-  ];
+      nixfmt-rfc-style # Nix formatter
+      nixd # Nix LSP
+      nix-init
+    ]
+    ++ (with unstable-pkgs; [
+      bun
+    ]);
 }
