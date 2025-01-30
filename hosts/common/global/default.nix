@@ -5,5 +5,6 @@
     ./network.nix
     ./firewall.nix
     ./gc.nix
+    ./graphics.nix
   ];
 }
