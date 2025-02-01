@@ -1,6 +1,11 @@
 {
   programs.nixvim.plugins = {
 
+    # Direnv
+    direnv = {
+      enable = true;
+    };
+
     # Dashboard
     alpha = {
       enable = true;
@@ -18,6 +23,7 @@
         marksman.enable = true; # Markdown
         nil_ls.enable = true; # Nix
         yamlls.enable = true; # YAML
+        clangd.enable = true; # C/C++
 
         lua_ls = {
           # Lua

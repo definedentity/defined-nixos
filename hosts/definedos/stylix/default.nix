@@ -1,5 +1,6 @@
 {
   pkgs,
+  unstable-pkgs,
   ...
 }:
 {
@@ -23,8 +24,9 @@
 
     # Cursor
     cursor = {
-      name = "Rose Pine Cursor";
-      package = pkgs.rose-pine-cursor;
+      package = unstable-pkgs.bibata-cursors;
+      name = "Bibata-Modern-Classic";
+      size = 24;
     };
 
     # Fonts
