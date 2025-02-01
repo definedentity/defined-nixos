@@ -15,7 +15,7 @@
       enable = true;
 
       settings = {
-        flavour = "macchiato";
+        flavour = "mocha";
         transparent_background = true;
 
         integrations = {
