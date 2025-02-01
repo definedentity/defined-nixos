@@ -1,5 +1,24 @@
 {
   programs.nixvim.plugins = {
+    # Comment
+    comment = {
+      enable = true;
+    };
+
+    # Treesitter
+    treesitter = {
+      enable = true;
+    };
+
+    # Sleuth
+    sleuth = {
+      enable = true;
+    };
+
+    # Trim trailing whitespace and lines
+    trim = {
+      enable = true;
+    };
 
     # Direnv
     direnv = {
