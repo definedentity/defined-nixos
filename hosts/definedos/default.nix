@@ -16,6 +16,7 @@
     ../common/optional/fail2ban.nix
     ../common/optional/quietboot.nix
     ../common/optional/ssd.nix
+    ../common/optional/gamemode.nix
   ];
 
   networking.hostName = "definedos";
