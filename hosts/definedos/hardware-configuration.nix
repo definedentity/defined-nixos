@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }:
 {
@@ -17,6 +18,7 @@
       kernelModules = [ ];
     };
 
+    kernelPackages = pkgs.linuxPackages_6_12;
     kernelModules = [ "kvm-amd" ];
     extraModulePackages = [ ];
 
