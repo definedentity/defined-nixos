@@ -24,6 +24,7 @@
       nitch # System fetch
       cava # Audio visualizer
       just # Command runner
+      ffmpeg # Media converter
 
       # Entertainment
       spotify-player
@@ -34,5 +35,6 @@
     ]
     ++ (with unstable-pkgs; [
       bun
+      deno
     ]);
 }
