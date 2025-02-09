@@ -25,9 +25,7 @@
       cava # Audio visualizer
       just # Command runner
       ffmpeg # Media converter
-
-      # Entertainment
-      spotify-player
+      spotify-player # Spotify player
 
       nixfmt-rfc-style # Nix formatter
       nixd # Nix LSP
