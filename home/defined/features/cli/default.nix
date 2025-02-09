@@ -26,6 +26,7 @@
       just # Command runner
       ffmpeg # Media converter
       spotify-player # Spotify player
+      feh # Image viewer
 
       nixfmt-rfc-style # Nix formatter
       nixd # Nix LSP
