@@ -1,33 +1,34 @@
-{ pkgs, ... }:
-{
-  home.packages = with pkgs; [
+{unstable-pkgs, ...}: {
+  home.packages = with unstable-pkgs; [
     gpg-tui
   ];
 
   services.gpg-agent = {
     enable = true;
 
-    pinentryPackage = pkgs.pinentry-tty;
+    pinentryPackage = unstable-pkgs.pinentry-tty;
   };
 
-  programs =
-    let
-      fixGpg = ''
-        gpgconf --launch gpg-agent
-      '';
-    in
-    {
-      zsh.loginExtra = fixGpg;
+  programs = let
+    fixGpg = ''
+      gpgconf --launch gpg-agent
+    '';
+  in {
+    zsh.loginExtra = fixGpg;
 
-      gpg = {
-        enable = true;
+    gpg = {
+      enable = true;
 
-        publicKeys = [
-          {
-            source = ../../keys/public.pgp;
-            trust = 5;
-          }
-        ];
-      };
+      publicKeys = [
+        {
+          source = ../../keys/definedentity.pgp;
+          trust = 5;
+        }
+        {
+          source = ../../keys/toby.pgp;
+          trust = 5;
+        }
+      ];
     };
+  };
 }
