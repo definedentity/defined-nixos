@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   imports = [
     ./hardware-configuration.nix
 
@@ -25,9 +24,6 @@
     "nix-command"
     "flakes"
   ];
-
-  programs.zsh.enable = true;
-  users.users.toby.shell = pkgs.zsh;
 
   system.stateVersion = "24.11";
 }

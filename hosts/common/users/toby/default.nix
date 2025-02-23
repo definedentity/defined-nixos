@@ -1,4 +1,6 @@
-{
+{pkgs, ...}: {
+  programs.zsh.enable = true;
+
   users.users.toby = {
     isNormalUser = true;
     description = "Nguyen Minh Tho";
@@ -6,5 +8,6 @@
       "networkmanager"
       "wheel"
     ];
+    shell = pkgs.zsh;
   };
 }
