@@ -1,7 +1,7 @@
 {
   imports = [
     ./discord.nix
-    ./vscode.nix
+    ./vscode
     ./audacity.nix
     ./blockbench.nix
     ./intellij-idea.nix

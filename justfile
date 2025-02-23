@@ -9,5 +9,6 @@ rebuild: rebuild-pre
 
 update:
     nix flake update
+    flatpak update
 
 rebuild-update: update rebuild

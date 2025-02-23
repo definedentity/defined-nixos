@@ -54,6 +54,8 @@ config.colors = {
 	},
 }
 
+config.check_for_updates = false
+
 config.window_background_opacity = 0.9
 
 config.font = wezterm.font("JetBrainsMono Nerd Font")

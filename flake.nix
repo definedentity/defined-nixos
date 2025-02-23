@@ -1,5 +1,5 @@
 {
-  description = "defined's NixOS configuration";
+  description = "Toby's NixOS configuration";
 
   inputs = {
     # Nix ecosystem
@@ -21,18 +21,20 @@
 
     # Nixvim
     nixvim.url = "github:nix-community/nixvim/nixos-24.11";
+
+    # Nix formatter
+    alejandra.url = "github:kamadorueda/alejandra/3.1.0";
   };
 
   outputs =
     {
-      self,
       nixpkgs,
       home-manager,
       ...
     }@inputs:
     {
       nixosConfigurations = {
-        definedos = nixpkgs.lib.nixosSystem rec {
+        deuterium = nixpkgs.lib.nixosSystem rec {
           system = "x86_64-linux";
           specialArgs = {
             inherit inputs system;
@@ -51,7 +53,7 @@
           modules = [
             inputs.stylix.nixosModules.stylix
 
-            ./hosts/definedos
+            ./hosts/deuterium
 
             home-manager.nixosModules.home-manager
             {
@@ -74,9 +76,9 @@
                 };
               };
 
-              home-manager.users.defined = {
+              home-manager.users.toby = {
                 imports = [
-                  ./home/defined/definedos.nix
+                  ./home/toby/deuterium.nix
                 ];
               };
             }

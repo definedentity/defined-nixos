@@ -1,6 +1,5 @@
-{ unstable-pkgs, ... }:
-{
+{unstable-pkgs, ...}: {
   home.packages = with unstable-pkgs; [
-    vesktop
+    heroic
   ];
 }

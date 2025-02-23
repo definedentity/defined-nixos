@@ -1,6 +1,6 @@
 {
   programs.nh = {
     enable = true;
-    flake = "/home/defined/definedos";
+    flake = "/home/toby/deuterium";
   };
 }

@@ -1,5 +1,5 @@
 {
-  users.users.defined = {
+  users.users.toby = {
     isNormalUser = true;
     description = "Nguyen Minh Tho";
     extraGroups = [

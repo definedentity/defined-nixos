@@ -3,8 +3,7 @@
   config,
   pkgs,
   ...
-}:
-{
+}: {
   boot = {
     initrd = {
       availableKernelModules = [
@@ -15,12 +14,12 @@
         "usb_storage"
         "sd_mod"
       ];
-      kernelModules = [ ];
+      kernelModules = [];
     };
 
     kernelPackages = pkgs.linuxPackages_6_12;
-    kernelModules = [ "kvm-amd" ];
-    extraModulePackages = [ ];
+    kernelModules = ["kvm-amd"];
+    extraModulePackages = [];
 
     loader = {
       systemd-boot = {
@@ -31,19 +30,18 @@
     };
   };
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/38a2a750-443d-4687-b56e-618d0942f6f3";
-    fsType = "ext4";
-  };
+fileSystems."/" =
+    { device = "/dev/disk/by-uuid/4f987f03-33b4-49d2-9ca5-72e92ee647a5";
+      fsType = "btrfs";
+      options = [ "subvol=@" ];
+    };
 
-  fileSystems."/boot" = {
-    device = "/dev/disk/by-uuid/C184-5B76";
-    fsType = "vfat";
-    options = [
-      "fmask=0077"
-      "dmask=0077"
-    ];
-  };
+  fileSystems."/boot" =
+    { device = "/dev/disk/by-uuid/63A7-87A4";
+      fsType = "vfat";
+      options = [ "fmask=0077" "dmask=0077" ];
+    };
+
 
   swapDevices = [
     {

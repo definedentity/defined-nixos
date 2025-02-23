@@ -1,5 +1,10 @@
-{ pkgs, unstable-pkgs, ... }:
 {
+  pkgs,
+  unstable-pkgs,
+  system,
+  inputs,
+  ...
+}: {
   imports = [
     ./zsh
     ./neovim
@@ -11,8 +16,7 @@
     ./direnv.nix
   ];
 
-  home.packages =
-    with pkgs;
+  home.packages = with pkgs;
     [
       bottom # System viewer
       eza # Better ls
@@ -24,16 +28,23 @@
       nitch # System fetch
       cava # Audio visualizer
       just # Command runner
-      ffmpeg # Media converter
       spotify-player # Spotify player
       feh # Image viewer
+      impala # Wifi manager
+      gparted # Partition manager
+      btrfs-progs # Btrfs tools
 
-      nixfmt-rfc-style # Nix formatter
+      # Media converter
+      ((ffmpeg-full.override {withUnfree = true;}).overrideAttrs (_: {doCheck = false;}))
+
       nixd # Nix LSP
       nix-init
     ]
     ++ (with unstable-pkgs; [
       bun
       deno
-    ]);
+    ])
+    ++ [
+      inputs.alejandra.defaultPackage.${system} # Nix formatter
+    ];
 }

@@ -5,21 +5,21 @@
 
     ./stylix
 
-    ../common/users/defined
+    ../common/users/toby
     ../common/global
 
     ../common/optional/nvidia.nix
     ../common/optional/kde.nix
     ../common/optional/pipewire.nix
-    ../common/optional/gpg.nix
     ../common/optional/flatpak.nix
     ../common/optional/fail2ban.nix
     ../common/optional/quietboot.nix
     ../common/optional/ssd.nix
     ../common/optional/gamemode.nix
+    ../common/optional/fwupd.nix
   ];
 
-  networking.hostName = "definedos";
+  networking.hostName = "deuterium";
 
   nix.settings.experimental-features = [
     "nix-command"
@@ -27,7 +27,7 @@
   ];
 
   programs.zsh.enable = true;
-  users.users.defined.shell = pkgs.zsh;
+  users.users.toby.shell = pkgs.zsh;
 
   system.stateVersion = "24.11";
 }

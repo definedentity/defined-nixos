@@ -7,8 +7,8 @@
   ];
 
   home = {
-    username = "defined";
-    homeDirectory = "/home/defined";
+    username = "toby";
+    homeDirectory = "/home/toby";
     stateVersion = "24.11";
     sessionVariables = {
       NIXOS_OZONE_WL = "1";
