@@ -1,8 +1,6 @@
 {
   pkgs,
   unstable-pkgs,
-  system,
-  inputs,
   ...
 }: {
   imports = [
@@ -39,11 +37,8 @@
     ]
     ++ (with unstable-pkgs; [
       bun
-      deno
 
       nixd # Nix LSP
-    ])
-    ++ [
-      inputs.alejandra.defaultPackage.${system} # Nix formatter
-    ];
+      alejandra # Nix formatter
+    ]);
 }

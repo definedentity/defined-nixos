@@ -21,9 +21,6 @@
 
     # Nixvim
     nixvim.url = "github:nix-community/nixvim/nixos-24.11";
-
-    # Nix formatter
-    alejandra.url = "github:kamadorueda/alejandra/3.1.0";
   };
 
   outputs =
