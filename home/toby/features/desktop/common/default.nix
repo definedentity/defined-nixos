@@ -7,5 +7,7 @@
     ./intellij-idea.nix
     ./obs-studio.nix
     ./wezterm
+    ./mpv.nix
+    ./thunderbird.nix
   ];
 }
