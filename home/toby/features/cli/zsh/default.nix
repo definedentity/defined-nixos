@@ -1,4 +1,3 @@
-{ ... }:
 {
   programs = {
     zsh = {
@@ -20,8 +19,11 @@
         zinit light Aloxaf/fzf-tab
         zinit light MichaelAquilina/zsh-you-should-use
 
+        zinit snippet OMZL::functions.zsh
+
         zinit snippet OMZP::git
         zinit snippet OMZP::sudo
+        zinit snippet OMZP::web-search
       '';
 
       initExtra = ''
@@ -47,7 +49,7 @@
 
     zoxide = {
       enable = true;
-      options = [ "--cmd cd" ];
+      options = ["--cmd cd"];
     };
 
     eza = {
