@@ -4,7 +4,7 @@
     ./vscode
     ./audacity.nix
     ./blockbench.nix
-    ./intellij-idea.nix
+    ./jetbrains.nix
     ./obs-studio.nix
     ./wezterm
     ./mpv.nix
