@@ -42,6 +42,7 @@ in {
 
   programs.vscode = {
     enable = true;
+    package = unstable-pkgs.vscodium;
 
     userSettings = lib.mkForce (builtins.fromJSON (builtins.readFile ./settings.json));
 
