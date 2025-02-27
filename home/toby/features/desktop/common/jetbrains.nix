@@ -1,5 +1,5 @@
 {unstable-pkgs, ...}: {
   home.packages = with unstable-pkgs; [
-    jetbrains.idea-community
+    (jetbrains.plugins.addPlugins jetbrains.idea-community [])
   ];
 }
