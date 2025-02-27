@@ -21,6 +21,9 @@
 
     # Nixvim
     nixvim.url = "github:nix-community/nixvim/nixos-24.11";
+
+    # Nix VSCode Extensions
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
   };
 
   outputs = {
