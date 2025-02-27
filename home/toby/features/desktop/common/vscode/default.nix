@@ -4,9 +4,9 @@
   system,
   inputs,
   ...
-}: let
-  extensions =
-    inputs.nix-vscode-extensions.extensions.${system};
+}:
+let
+  extensions = inputs.nix-vscode-extensions.extensions.${system};
 
   extensionsList = with extensions.vscode-marketplace; [
     streetsidesoftware.code-spell-checker
@@ -35,7 +35,8 @@
     supermaven.supermaven
     rust-lang.rust-analyzer
   ];
-in {
+in
+{
   imports = [
     ./keybindings.nix
   ];

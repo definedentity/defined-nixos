@@ -42,14 +42,14 @@
         vi = "nvim";
         yt-flac = "yt-dlp -f bestaudio --extract-audio --audio-format flac";
         c = "clear";
-        code = "code --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland";
+        code = "codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland";
         spotify = "spotify_player";
       };
     };
 
     zoxide = {
       enable = true;
-      options = ["--cmd cd"];
+      options = [ "--cmd cd" ];
     };
 
     eza = {
