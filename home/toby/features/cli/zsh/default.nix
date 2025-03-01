@@ -34,9 +34,12 @@
       '';
 
       shellAliases = {
-        ls = "eza --icons --color";
-        ll = "eza --icons -alh --color";
-        tree = "eza --icons --tree --color";
+        ls = "lsd";
+        l = "lsd -l";
+        la = "lsd -a";
+        lla = "lsd -la";
+        lt = "lsd --tree";
+
         cat = "bat";
         vim = "nvim";
         vi = "nvim";
@@ -49,10 +52,10 @@
 
     zoxide = {
       enable = true;
-      options = [ "--cmd cd" ];
+      options = ["--cmd cd"];
     };
 
-    eza = {
+    lsd = {
       enable = true;
     };
 

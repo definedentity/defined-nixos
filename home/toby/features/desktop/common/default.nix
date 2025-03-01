@@ -9,5 +9,6 @@
     ./wezterm
     ./mpv.nix
     ./thunderbird.nix
+    ./krita.nix
   ];
 }
