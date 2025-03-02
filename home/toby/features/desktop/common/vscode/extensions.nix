@@ -25,4 +25,6 @@ with marketplace; [
   dbaeumer.vscode-eslint
   supermaven.supermaven
   rust-lang.rust-analyzer
+  redhat.vscode-yaml
+  redhat.vscode-xml
 ]
