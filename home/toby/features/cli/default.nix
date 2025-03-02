@@ -16,6 +16,10 @@
 
   home.packages = with pkgs;
     [
+      # Media converter
+      ((ffmpeg-full.override {withUnfree = true;}).overrideAttrs (_: {doCheck = false;}))
+    ]
+    ++ (with unstable-pkgs; [
       bottom # System viewer
       eza # Better ls
       ripgrep # Better grep
@@ -31,13 +35,9 @@
       impala # Wifi manager
       gparted # Partition manager
       btrfs-progs # Btrfs tools
+      bun # JavaScript runtime
 
-      # Media converter
-      ((ffmpeg-full.override {withUnfree = true;}).overrideAttrs (_: {doCheck = false;}))
-    ]
-    ++ (with unstable-pkgs; [
-      bun
-
+      # Nix
       nixd # Nix LSP
       alejandra # Nix formatter
     ]);

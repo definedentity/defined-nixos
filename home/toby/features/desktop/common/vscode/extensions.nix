@@ -27,4 +27,5 @@ with marketplace; [
   rust-lang.rust-analyzer
   redhat.vscode-yaml
   redhat.vscode-xml
+  mikestead.dotenv
 ]
