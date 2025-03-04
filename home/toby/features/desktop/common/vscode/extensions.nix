@@ -23,9 +23,13 @@ with marketplace; [
   editorconfig.editorconfig
   foxundermoon.shell-format
   dbaeumer.vscode-eslint
-  supermaven.supermaven
   rust-lang.rust-analyzer
   redhat.vscode-yaml
   redhat.vscode-xml
   mikestead.dotenv
+
+  (supermaven.supermaven.override
+    {
+      meta.license = [];
+    })
 ]
