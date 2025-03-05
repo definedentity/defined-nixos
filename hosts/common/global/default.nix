@@ -7,5 +7,6 @@
     ./gc.nix
     ./graphics.nix
     ./upower.nix
+    ./cache.nix
   ];
 }
