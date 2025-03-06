@@ -33,8 +33,10 @@
       spotify-player # Spotify player
       feh # Image viewer
       impala # Wifi manager
+
       gparted # Partition manager
       btrfs-progs # Btrfs tools
+
       bun # JavaScript runtime
 
       # Nix
