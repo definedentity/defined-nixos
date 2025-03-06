@@ -11,5 +11,6 @@
     ./thunderbird.nix
     ./krita.nix
     ./davinci-resolve.nix
+    ./easyeffects.nix
   ];
 }
