@@ -10,7 +10,7 @@
     ./mpv.nix
     ./thunderbird.nix
     ./krita.nix
-    ./davinci-resolve.nix
+    # ./davinci-resolve.nix
     ./easyeffects.nix
   ];
 }
