@@ -37,8 +37,6 @@
       gparted # Partition manager
       btrfs-progs # Btrfs tools
 
-      bun # JavaScript runtime
-
       # Nix
       nixd # Nix LSP
       alejandra # Nix formatter

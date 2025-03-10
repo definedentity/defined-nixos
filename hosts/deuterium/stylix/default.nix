@@ -2,8 +2,7 @@
   pkgs,
   unstable-pkgs,
   ...
-}:
-{
+}: {
   stylix = {
     enable = true;
 
@@ -31,7 +30,6 @@
 
     # Fonts
     fonts = {
-
       sizes = {
         applications = 10;
         desktop = 10;
@@ -45,7 +43,7 @@
       };
 
       monospace = {
-        package = pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; };
+        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
         name = "JetBrainsMono Nerd Font Mono";
       };
 
