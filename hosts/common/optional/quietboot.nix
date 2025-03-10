@@ -1,8 +1,4 @@
 {
-  pkgs,
-  ...
-}:
-{
   console = {
     earlySetup = false;
   };
