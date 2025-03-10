@@ -1,4 +1,4 @@
-{
+{unstable-pkgs, ...}: {
   programs = {
     zsh = {
       enable = true;
@@ -52,6 +52,8 @@
     zoxide = {
       enable = true;
       options = ["--cmd cd"];
+
+      package = unstable-pkgs.zoxide;
     };
 
     lsd = {
@@ -60,6 +62,8 @@
 
     starship = {
       enable = true;
+
+      package = unstable-pkgs.starship;
 
       settings = builtins.fromTOML (builtins.readFile ./starship.toml);
     };
