@@ -22,7 +22,6 @@
         zinit snippet OMZL::functions.zsh
 
         zinit snippet OMZP::git
-        zinit snippet OMZP::sudo
         zinit snippet OMZP::web-search
       '';
 
