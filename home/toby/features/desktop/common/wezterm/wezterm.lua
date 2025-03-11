@@ -80,15 +80,6 @@ config.hide_tab_bar_if_only_one_tab = true
 config.show_new_tab_button_in_tab_bar = false
 
 config.enable_wayland = true
-config.webgpu_preferred_adapter = {
-    backend = "Vulkan",
-    device = 8093,
-    device_type = "DiscreteGpu",
-    driver = "NVIDIA",
-    driver_info = "565.77",
-    name = "NVIDIA GeForce GTX 1650",
-    vendor = 4318
-}
 config.front_end = "WebGpu"
 config.webgpu_power_preference = "HighPerformance"
 
