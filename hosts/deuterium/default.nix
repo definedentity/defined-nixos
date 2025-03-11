@@ -12,7 +12,7 @@
     ../common/optional/pipewire.nix
     ../common/optional/flatpak.nix
     ../common/optional/fail2ban.nix
-    # ../common/optional/quietboot.nix
+    ../common/optional/quietboot.nix
     ../common/optional/ssd.nix
     ../common/optional/gamemode.nix
     ../common/optional/fwupd.nix
