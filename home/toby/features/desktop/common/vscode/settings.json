@@ -1,81 +1,82 @@
 {
-    "workbench.startupEditor": "none",
-    "workbench.colorTheme": "Stylix",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Stylix",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
 
-    "window.titleBarStyle": "custom",
+  "window.titleBarStyle": "custom",
 
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2,
-    "editor.fontFamily": "JetBrainsMono Nerd Font",
-    "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.minimap.enabled": false,
-    "editor.quickSuggestions": {
-        "strings": "on"
-    },
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.wordWrap": "on",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.tabSize": 2,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.wordWrap": "on",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.formatOnSave": true,
+  "editor.guides.bracketPairs": "active",
 
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
 
-    "terminal.integrated.shellIntegration.enabled": true,
-    "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.gpuAcceleration": "off",
 
-    "extensions.ignoreRecommendations": true,
+  "extensions.ignoreRecommendations": true,
 
-    "prettier.tabWidth": 4,
-    "prettier.useTabs": false,
-    "prettier.endOfLine": "lf",
+  "prettier.tabWidth": 4,
+  "prettier.useTabs": false,
+  "prettier.endOfLine": "lf",
 
-    "git.openRepositoryInParentFolders": "never",
+  "git.openRepositoryInParentFolders": "never",
 
-    "supermaven.enableFixWithSupermaven": true,
+  "supermaven.enableFixWithSupermaven": true,
 
-    "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
 
-    "[lua]": {
-        "editor.defaultFormatter": "sumneko.lua"
-    },
+  "[lua]": {
+    "editor.defaultFormatter": "sumneko.lua"
+  },
 
-    "files.associations": {
-        "*.css": "tailwindcss"
-    },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
 
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "liveServer.settings.donotShowInfoMsg": true,
 
-    "projectManager.sortList": "Recent",
+  "projectManager.sortList": "Recent",
 
-    "nix.enableLanguageServer": true,
-    "nix.serverPath": "nixd",
-    "nix.serverSettings": {
-        "nixd": {
-            "formatting": {
-                "command": ["alejandra"]
-            }
-        }
-    },
-    "[nix]": {
-        "editor.defaultFormatter": "jnoortheen.nix-ide"
-    },
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "nix.serverSettings": {
+    "nixd": {
+      "formatting": {
+        "command": ["alejandra"]
+      }
+    }
+  },
+  "[nix]": {
+    "editor.defaultFormatter": "jnoortheen.nix-ide"
+  },
 
-    "[shellscript]": {
-        "editor.defaultFormatter": "foxundermoon.shell-format"
-    },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
 
-    "[rust]": {
-        "editor.defaultFormatter": "rust-lang.rust-analyzer"
-    },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
 
-    "[c]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
-    },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
 
-    "zig.zls.enabled": "on"
+  "zig.zls.enabled": "on"
 }
