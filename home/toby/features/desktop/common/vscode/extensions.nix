@@ -11,7 +11,6 @@ with marketplace; [
   formulahendry.auto-complete-tag
   christian-kohler.npm-intellisense
   jnoortheen.nix-ide
-  pkief.material-icon-theme
   eamodio.gitlens
   ziglang.vscode-zig
   dsznajder.es7-react-js-snippets
@@ -27,6 +26,12 @@ with marketplace; [
   redhat.vscode-yaml
   redhat.vscode-xml
   mikestead.dotenv
+  quicktype.quicktype
+  mintlify.document
+  usernamehw.errorlens
+  kisstkondoros.vscode-gutter-preview
+  wix.vscode-import-cost
+  miguelsolorio.symbols
 
   (supermaven.supermaven.override
     {

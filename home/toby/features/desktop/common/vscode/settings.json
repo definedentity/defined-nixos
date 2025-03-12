@@ -1,10 +1,13 @@
 {
   "workbench.startupEditor": "none",
   "workbench.colorTheme": "Stylix",
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
 
   "window.titleBarStyle": "custom",
+
+  "breadcrumbs.enabled": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
