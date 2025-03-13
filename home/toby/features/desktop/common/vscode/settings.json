@@ -4,13 +4,14 @@
   "workbench.iconTheme": "symbols",
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
+  "workbench.colorCustomizations": {},
 
   "window.titleBarStyle": "custom",
 
   "breadcrumbs.enabled": false,
 
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
