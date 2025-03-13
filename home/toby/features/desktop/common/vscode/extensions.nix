@@ -35,6 +35,7 @@ in
     wix.vscode-import-cost
     miguelsolorio.symbols
     sumneko.lua
+    myriad-dreamin.tinymist
 
     (removeLicense ms-vscode.cpptools)
     (removeLicense supermaven.supermaven)
