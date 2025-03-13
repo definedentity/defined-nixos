@@ -1,7 +1,12 @@
 {pkgs, ...}: {
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = ["nvidia"];
-  services.desktopManager.plasma6.enable = true;
+  services = {
+    xserver = {
+      enable = true;
+      videoDrivers = ["nvidia"];
+    };
+
+    desktopManager.plasma6.enable = true;
+  };
 
   environment.plasma6.excludePackages = with pkgs.kdePackages; [
     konsole
@@ -9,5 +14,6 @@
     kate
     okular
     discover
+    print-manager
   ];
 }

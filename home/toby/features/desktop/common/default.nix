@@ -11,6 +11,6 @@
     ./thunderbird.nix
     ./krita.nix
     ./davinci-resolve.nix
-    ./firefox
+    # ./firefox
   ];
 }
