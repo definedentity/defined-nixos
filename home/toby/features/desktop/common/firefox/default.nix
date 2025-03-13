@@ -7,6 +7,6 @@
 
   programs.firefox = {
     enable = true;
-    package = unstable-pkgs.librewolf;
+    package = unstable-pkgs.floorp;
   };
 }
