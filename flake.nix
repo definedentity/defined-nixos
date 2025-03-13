@@ -28,6 +28,7 @@
 
   outputs = {
     nixpkgs,
+    nixpkgs-unstable,
     home-manager,
     ...
   } @ inputs: {
@@ -67,7 +68,7 @@
                   config.allowUnfree = true;
                 };
 
-                unstable-pkgs = import inputs.nixpkgs-unstable {
+                unstable-pkgs = import nixpkgs-unstable {
                   inherit system;
                   config.allowUnfree = true;
                 };

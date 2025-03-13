@@ -17,6 +17,7 @@
     ../common/optional/gamemode.nix
     ../common/optional/fwupd.nix
     ../common/optional/fonts.nix
+    ../common/optional/tlp.nix
   ];
 
   networking.hostName = "deuterium";
