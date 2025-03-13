@@ -5,15 +5,17 @@
     dates = "weekly";
   };
 
-  # Automatic cleanup
-  nix.gc = {
-    automatic = true;
-    dates = "daily";
-    options = "--delete-older-than 3d";
-  };
+  nix = {
+    # Automatic cleanup
+    gc = {
+      automatic = true;
+      dates = "daily";
+      options = "--delete-older-than 3d";
+    };
 
-  # Optimize Nix store
-  nix.settings = {
-    auto-optimise-store = true;
+    # Optimize Nix store
+    settings = {
+      auto-optimise-store = true;
+    };
   };
 }
