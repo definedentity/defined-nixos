@@ -82,5 +82,11 @@
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
 
-  "zig.zls.enabled": "on"
+  "zig.zls.enabled": "on",
+
+  "[typst]": {
+    "editor.defaultFormatter": "myriad-dreamin.tinymist"
+  },
+  "tinymist.formatterMode": "typstyle",
+  "tinymist.formatterIndentSize": 4
 }
