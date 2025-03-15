@@ -31,6 +31,12 @@
     amdgpuBusId = "PCI:6:0:0";
   };
 
+  # Keymap
+  services.xserver.xkb = {
+    layout = "us";
+    variant = "";
+  };
+
   networking.hostName = "deuterium";
 
   nix.settings.experimental-features = [
