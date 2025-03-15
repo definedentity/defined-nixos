@@ -40,5 +40,6 @@
       # Nix
       nixd # Nix LSP
       alejandra # Nix formatter
+      nix-init
     ]);
 }
