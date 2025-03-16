@@ -1,4 +1,8 @@
 {pkgs, ...}: {
+  imports = [
+    ./bootstrap.nix
+  ];
+
   programs.zsh.enable = true;
 
   users.users.toby = {
@@ -9,13 +13,5 @@
       "wheel"
     ];
     shell = pkgs.zsh;
-  };
-
-  systemd.services.toby-bootstrap = {
-    wantedBy = ["multi-user.target"];
-    script = ''
-      mkdir -p /home/toby/Projects
-      mkdir -p /home/toby/Workspace
-    '';
   };
 }
