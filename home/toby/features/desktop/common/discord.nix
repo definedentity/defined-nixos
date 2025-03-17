@@ -1,5 +1,8 @@
 {unstable-pkgs, ...}: {
   home.packages = with unstable-pkgs; [
-    discord
+    (discord.override
+      {
+        withOpenASAR = true;
+      })
   ];
 }
