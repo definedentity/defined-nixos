@@ -28,8 +28,6 @@
       initExtra = ''
         zstyle ':completion:*' menu no
         zstyle ':fzf-tab:complete:cd:*' fzf-preview 'eza -1 --color=always $realpath'
-
-        nitch
       '';
 
       shellAliases = {

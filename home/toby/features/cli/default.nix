@@ -27,7 +27,6 @@
       aria2 # Better curl
       yt-dlp # YouTube dlp
       dust # Better du
-      nitch # System fetch
       cava # Audio visualizer
       just # Command runner
       spotify-player # Spotify player
