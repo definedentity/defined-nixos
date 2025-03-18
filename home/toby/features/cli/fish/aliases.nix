@@ -14,10 +14,12 @@
     code = "codium --enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform=wayland";
     spotify = "spotify_player";
 
+    # Git
     g = "git";
     ga = "git add";
     grhh = "git reset --hard HEAD";
-    gp = "git pull";
+    gl = "git pull";
+    gp = "git push";
     gst = "git status";
   };
 }
