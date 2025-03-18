@@ -3,7 +3,7 @@
     ./bootstrap.nix
   ];
 
-  programs.zsh.enable = true;
+  programs.fish.enable = true;
 
   users.users.toby = {
     isNormalUser = true;
@@ -12,6 +12,6 @@
       "networkmanager"
       "wheel"
     ];
-    shell = pkgs.zsh;
+    shell = pkgs.fish;
   };
 }
