@@ -4,7 +4,7 @@
   ...
 }: {
   imports = [
-    ./zsh
+    ./fish
     ./neovim
     ./git.nix
     ./fzf.nix
