@@ -1,9 +1,13 @@
-{pkgs, ...}: {
+{unstable-pkgs, ...}: {
   imports = [
     ./bootstrap.nix
   ];
 
-  programs.fish.enable = true;
+  programs.fish = {
+    enable = true;
+
+    package = unstable-pkgs.fish;
+  };
 
   users.users.toby = {
     isNormalUser = true;
@@ -12,6 +16,6 @@
       "networkmanager"
       "wheel"
     ];
-    shell = pkgs.fish;
+    shell = unstable-pkgs.fish;
   };
 }
