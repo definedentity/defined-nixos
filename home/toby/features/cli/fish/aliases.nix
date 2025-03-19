@@ -21,5 +21,6 @@
     gl = "git pull";
     gp = "git push";
     gst = "git status";
+    gcl = "git clone";
   };
 }
