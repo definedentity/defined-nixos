@@ -121,7 +121,7 @@ format = "[$symbol](bold blue)"
 disabled = false
 
 [os.symbols]
-EndeavourOS = "󰣇 "
+NixOS = " "
 
 [username]
 style_user = "yellow bold"

@@ -1,5 +1,5 @@
-{unstable-pkgs, ...}: {
-  home.packages = with unstable-pkgs; [
+{pkgs, ...}: {
+  home.packages = with pkgs; [
     krita
   ];
 }
