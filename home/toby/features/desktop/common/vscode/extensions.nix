@@ -36,6 +36,7 @@ in
     miguelsolorio.symbols
     sumneko.lua
     myriad-dreamin.tinymist
+    styled-components.vscode-styled-components
 
     (removeLicense ms-vscode.cpptools)
     (removeLicense supermaven.supermaven)
