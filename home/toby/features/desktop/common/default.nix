@@ -8,8 +8,7 @@
     ./wezterm
     ./mpv.nix
     ./thunderbird.nix
-    ./krita.nix
-    ./davinci-resolve.nix
+    #./krita.nix # Take too much time to build
     # ./firefox
     ./easyeffects.nix
   ];

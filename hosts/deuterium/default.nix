@@ -18,6 +18,7 @@
     ../common/optional/fwupd.nix
     ../common/optional/fonts.nix
     ../common/optional/tlp.nix
+    ../common/optional/ssh-agent.nix
   ];
 
   # NVIDIA
