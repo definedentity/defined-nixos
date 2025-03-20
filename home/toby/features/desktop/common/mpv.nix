@@ -1,6 +1,6 @@
 {
   programs.mpv = {
     enable = true;
-    config = { };
+    config = {};
   };
 }
