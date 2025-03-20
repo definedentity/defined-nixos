@@ -6,6 +6,9 @@
     script = ''
       mkdir -p /home/toby/Projects
       mkdir -p /home/toby/Workspace
+
+      chown -R toby /home/toby/Projects
+      chown -R toby /home/toby/Workspace
     '';
   };
 }
