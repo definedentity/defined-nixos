@@ -13,5 +13,6 @@
     ./easyeffects.nix
     ./davinci-resolve.nix
     ./blender.nix
+    ./blockbench.nix
   ];
 }
