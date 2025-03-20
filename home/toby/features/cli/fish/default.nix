@@ -6,6 +6,7 @@
   programs = {
     fish = {
       enable = true;
+      package = unstable-pkgs.fish;
 
       shellInit = ''
         set -U fish_greeting
