@@ -12,5 +12,6 @@
     # ./firefox
     ./easyeffects.nix
     ./davinci-resolve.nix
+    ./blender.nix
   ];
 }
