@@ -11,5 +11,6 @@
     ./krita.nix
     # ./firefox
     ./easyeffects.nix
+    ./davinci-resolve.nix
   ];
 }
