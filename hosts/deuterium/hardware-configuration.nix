@@ -32,13 +32,13 @@
 
   fileSystems = {
     "/" = {
-      device = "/dev/disk/by-uuid/3924a28d-273f-4c6e-8f50-776470554a6f";
+      device = "/dev/disk/by-uuid/ea68fe31-b214-4045-ac7b-89a26e1c276f";
       fsType = "btrfs";
       options = ["subvol=@"];
     };
 
     "/boot" = {
-      device = "/dev/disk/by-uuid/E305-2265";
+      device = "/dev/disk/by-uuid/42A0-61E5";
       fsType = "vfat";
       options = ["fmask=0077" "dmask=0077"];
     };
